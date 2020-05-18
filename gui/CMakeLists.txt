@@ -65,7 +65,7 @@ if(NOT WIN32)
     if (PLUGIN_PATH)
         set(PLUGIN_INSTALL_PATH ${PLUGIN_PATH})
     else()
-        set(PLUGIN_INSTALL_PATH /etc/ets2-job-logger)
+        set(PLUGIN_INSTALL_PATH /etc/EUROTRANS-Logger)
     endif()
 endif()
 
@@ -83,7 +83,7 @@ if(MSVC OR MINGW)
     configure_file(version.iss.in version.iss)
 endif()
 
-add_executable(ets2-job-logger WIN32 ${SOURCES})
+add_executable(EUROTRANS-Logger WIN32 ${SOURCES})
 
 if(MINGW)
     set(WIN32_LIBS -lws2_32 -lcrypt32)

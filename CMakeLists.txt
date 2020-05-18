@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.7)
-project(ets2-job-logger)
+project(EUROTRANS-Logger)
 
 set(CMAKE_CXX_STANDARD 11)
 
