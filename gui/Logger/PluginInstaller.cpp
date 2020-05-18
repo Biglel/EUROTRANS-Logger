@@ -89,7 +89,7 @@ wxString get_plugin_file_path(const PluginInstaller::Platform &platform) {
     path.append(wxFileName::GetPathSeparator());
 #endif
 
-    path.append("EUROTRANS Logger" + get_plugin_extension(platform));
+    path.append("EUROTRANS-Logger" + get_plugin_extension(platform));
 
     return path;
 }
@@ -162,7 +162,7 @@ bool PluginInstaller::NeedsUpdate(const wxString &game_path,
     wxString gameBinDir = get_game_bin_directory(platform, game_path);
     wxString gamePluginDir = gameBinDir + "plugins";
     wxString installedPlugin = gamePluginDir + wxFileName::GetPathSeparator() +
-            wxString("EUROTRANS Logger") + get_plugin_extension(platform);
+            wxString("EUROTRANS-Logger") + get_plugin_extension(platform);
 
     if (!wxFileExists(pluginFile)) {
         error = "Il manque un plugin ...";
@@ -193,7 +193,7 @@ bool PluginInstaller::Update(const wxString &game_path, wxString &error) {
     wxString gameBinDir = get_game_bin_directory(platform, game_path);
     wxString gamePluginDir = gameBinDir + "plugins";
     wxString installPath = gamePluginDir + wxFileName::GetPathSeparator() +
-            wxString("EUROTRANS Logger") + get_plugin_extension(platform);
+            wxString("EUROTRANS-Logger") + get_plugin_extension(platform);
 
     if (!wxDirExists(gamePluginDir)) {
         if (!wxMkdir(gamePluginDir)) {

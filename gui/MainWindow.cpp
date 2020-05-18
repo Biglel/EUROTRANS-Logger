@@ -124,7 +124,7 @@ void MainWindow::on_job_update(wxCommandEvent &event) {
 }
 
 void MainWindow::on_sender_update(wxThreadEvent &event) {
-    wxNotificationMessage notificationMessage("EUROTRANS Logger", "", this);
+    wxNotificationMessage notificationMessage("EUROTRANS-Logger", "", this);
 
     if (event.GetId() == wxID_ABORT) {
         notificationMessage.SetMessage("Erreur lors de l'envoi de votre livraison. (" + event.GetString() + ")");

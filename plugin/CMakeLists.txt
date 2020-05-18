@@ -18,13 +18,13 @@ if(MSVC)
 
     set_target_properties(plugin_shared
                           PROPERTIES
-                          OUTPUT_NAME "EUROTRANS Logger"
+                          OUTPUT_NAME "EUROTRANS-Logger"
                           PREFIX ""
                           )
 
     set_target_properties(plugin_static
                           PROPERTIES
-                          OUTPUT_NAME "EUROTRANS Logger"
+                          OUTPUT_NAME "EUROTRANS-Logger"
                           PREFIX ""
                           )
 
@@ -34,7 +34,7 @@ else()
 
     set_target_properties(${PROJECT_NAME}
                           PROPERTIES
-                          OUTPUT_NAME "EUROTRANS Logger"
+                          OUTPUT_NAME "EUROTRANS-Logger"
                           PREFIX ""
                           )
 endif()

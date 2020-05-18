@@ -32,7 +32,7 @@ AboutDialog::AboutDialog( wxWindow* parent, wxWindowID id, const wxString& title
 	wxBoxSizer* bSizer4;
 	bSizer4 = new wxBoxSizer( wxHORIZONTAL );
 
-	m_staticTextName = new wxStaticText( this, wxID_ANY, wxT("EUROTRANS Logger"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticTextName = new wxStaticText( this, wxID_ANY, wxT("EUROTRANS-Logger"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticTextName->Wrap( -1 );
 	m_staticTextName->SetFont( wxFont( wxNORMAL_FONT->GetPointSize(), wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD, false, wxEmptyString ) );
 

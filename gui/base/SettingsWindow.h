@@ -57,7 +57,7 @@ namespace base
 
 		public:
 
-			SettingsWindow( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("EUROTRANS Logger - Configuration"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxDEFAULT_DIALOG_STYLE );
+			SettingsWindow( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("EUROTRANS-Logger - Configuration"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxDEFAULT_DIALOG_STYLE );
 			~SettingsWindow();
 
 	};

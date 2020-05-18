@@ -72,10 +72,10 @@ SettingsWindow::SettingsWindow( wxWindow* parent, wxWindowID id, const wxString&
 	wxStaticBoxSizer* sbSizerMisc;
 	sbSizerMisc = new wxStaticBoxSizer( new wxStaticBox( this, wxID_ANY, wxT("Autres") ), wxVERTICAL );
 
-	m_checkBoxStartOnStartup = new wxCheckBox( sbSizerMisc->GetStaticBox(), wxID_ANY, wxT("Lancer EUROTRANS Logger au démarrage de votre PC"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_checkBoxStartOnStartup = new wxCheckBox( sbSizerMisc->GetStaticBox(), wxID_ANY, wxT("Lancer EUROTRANS-Logger au démarrage de votre PC"), wxDefaultPosition, wxDefaultSize, 0 );
 	sbSizerMisc->Add( m_checkBoxStartOnStartup, 0, wxALL, 5 );
 
-	m_checkBoxRunInBackground = new wxCheckBox( sbSizerMisc->GetStaticBox(), wxID_ANY, wxT("Laisser EUROTRANS Logger en fond de tâche"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_checkBoxRunInBackground = new wxCheckBox( sbSizerMisc->GetStaticBox(), wxID_ANY, wxT("Laisser EUROTRANS-Logger en fond de tâche"), wxDefaultPosition, wxDefaultSize, 0 );
 	sbSizerMisc->Add( m_checkBoxRunInBackground, 0, wxALL, 5 );
 
 

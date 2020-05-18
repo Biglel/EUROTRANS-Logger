@@ -73,7 +73,7 @@ bool Settings::GetStartOnStartup() const {
     ret = wxFileExists(getAutostartDir() + "/ets2-job-logger.desktop");
 #elif _WIN32
     wxRegKey startup(wxRegKey::HKCU, "Software\\Microsoft\\Windows\\CurrentVersion\\Run");
-    ret = startup.HasValue("EUROTRANS Logger");
+    ret = startup.HasValue("EUROTRANS-Logger");
 #elif __APPLE__
 #warning "Settings::GetStartOnBoot() not implemented"
     ret = false;
@@ -231,7 +231,7 @@ wxString Settings::getConfigFile() const {
     if (path.empty()) {
         return "";
     } else {
-        path += wxFileName::GetPathSeparator() + wxString("EUROTRANS Logger");
+        path += wxFileName::GetPathSeparator() + wxString("EUROTRANS-Logger");
     }
 
     return path + wxFileName::GetPathSeparator() + wxString("config.ini");

@@ -27,8 +27,8 @@ m_minimized(false),
 m_checker(nullptr),
 m_ipc(nullptr),
 m_window(nullptr) {
-    SetAppName("EUROTRANS Logger");
-    SetAppDisplayName("EUROTRANS Logger");
+    SetAppName("EUROTRANS-Logger");
+    SetAppDisplayName("EUROTRANS-Logger");
 
     Connect(wxID_SETUP, wxEVT_COMMAND_TOOL_CLICKED, wxCommandEventHandler(Application::on_show_settings));
     Connect(wxID_EXIT, wxEVT_COMMAND_TOOL_CLICKED, wxCommandEventHandler(Application::on_exit));

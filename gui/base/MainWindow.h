@@ -51,7 +51,7 @@ namespace base
 
 		public:
 
-			MainWindow( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("EUROTRANS Logger"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 500,320 ), long style = wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL );
+			MainWindow( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("EUROTRANS-Logger"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 500,320 ), long style = wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL );
 
 			~MainWindow();
 

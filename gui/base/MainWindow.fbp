@@ -17,7 +17,7 @@
         <property name="image_path_wrapper_function_name"></property>
         <property name="indent_with_spaces"></property>
         <property name="internationalize">0</property>
-        <property name="name">EUROTRANS Logger</property>
+        <property name="name">EUROTRANS-Logger</property>
         <property name="namespace">&quot;base&quot;</property>
         <property name="path">.</property>
         <property name="precompiled_header"></property>
@@ -50,7 +50,7 @@
             <property name="size">500,320</property>
             <property name="style">wxDEFAULT_FRAME_STYLE</property>
             <property name="subclass">; ; forward_declare</property>
-            <property name="title">EUROTRANS Logger</property>
+            <property name="title">EUROTRANS-Logger</property>
             <property name="tooltip"></property>
             <property name="window_extra_style"></property>
             <property name="window_name"></property>
