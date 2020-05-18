@@ -26,6 +26,6 @@ after_build:
   - iscc build\InnoSetup.iss
 
 artifacts:
-  - path: 'build\Output\ETS2JobLogger-v*.exe'
-  - path: 'build\bin\ets2-job-logger.exe'
-  - path: 'build\bin\ets2-job-logger.dll'
+  - path: 'build\Output\EUROTRANS Logger-v*.exe'
+  - path: 'build\bin\EUROTRANS Logger.exe'
+  - path: 'build\bin\EUROTRANS Logger.dll'

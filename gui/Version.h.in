@@ -1,5 +1,6 @@
 /****************************************************************************
- * Copyright (c) 2019 Tomi Lähteenmäki <lihis@lihis.net>                    *
+ * Copyright (c) 2020 DAHMANE Bilel <bilel@dahmane.info>                    *
+                      Tomi Lähteenmäki <lihis@lihis.net>                    *
  *                                                                          *
  * This program is free software; you can redistribute it and/or modify     *
  * it under the terms of the GNU General Public License as published by     *
@@ -20,7 +21,7 @@
 /**
  * @file Version.h
  * @brief Application version
- * @author Tomi Lähteenmäki
+ * @author DAHMANE Bilel & Tomi Lähteenmäki
  * @license This project is licensed under GNU General Public License, Version 2
  */
 
