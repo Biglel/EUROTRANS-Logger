@@ -96,7 +96,7 @@ elseif (WIN32)
     set(WIN32_LIBS ${WS2_32_LIB} ${GDI32_LIB} ${ADVAPI32_LIB} ${CRYPT32_LIB} ${USER32_LIB})
 endif()
 
-target_link_libraries(ets2-job-logger
+target_link_libraries(EUROTRANS-Logger
                       PRIVATE
                       ets2joblogger::plugin
                       ${wxWidgets_LIBRARIES}
@@ -109,7 +109,7 @@ target_link_libraries(ets2-job-logger
                       ${JSONCPP_LIBRARIES}
                       )
 
-target_include_directories(ets2-job-logger
+target_include_directories(EUROTRANS-Logger
                            PRIVATE
                            "${CMAKE_CURRENT_SOURCE_DIR}"
                            "${CMAKE_CURRENT_BINARY_DIR}"
@@ -123,7 +123,7 @@ target_include_directories(ets2-job-logger
                            "${JSONCPP_INCLUDE_DIRS}"
                            )
 
-target_compile_options(ets2-job-logger
+target_compile_options(EUROTRANS-Logger
                        PRIVATE
                        ${wxWidgets_CFLAGS_OTHER}
                        ${wxWidgets_CFLAGS_OTHER}
@@ -131,7 +131,7 @@ target_compile_options(ets2-job-logger
                        )
 
 if(DEVELOPMENT)
-    target_compile_options(ets2-job-logger
+    target_compile_options(EUROTRANS-Logger
                            PRIVATE
                            -DDEVELOPMENT=1
                            )
