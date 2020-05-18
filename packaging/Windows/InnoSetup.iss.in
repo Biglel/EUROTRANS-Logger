@@ -1,0 +1,22 @@
+#include "@CMAKE_CURRENT_BINARY_DIR@\gui\version.iss"
+
+[Setup]
+AppName=EUROTRANS Logger
+AppVersion={#APP_VERSION_FULL}
+LicenseFile=@CMAKE_CURRENT_LIST_DIR@\LICENSE.md
+OutputBaseFilename=EUROTRANS Logger-v{#APP_VERSION_FULL}
+UsePreviousAppDir=yes
+PrivilegesRequired=none
+DefaultDirName={userappdata}\eurotranslogger
+DefaultGroupName=EUROTRANS Logger
+
+[Tasks]
+Name: AutoRunRegistry; Description: "Laisser EUROTRANS Logger en fond de tâche"; GroupDescription: "{cm:AdditionalIcons}"
+
+[Registry]
+Root: HKCU; Subkey: "Software\Microsoft\Windows\CurrentVersion\Run"; ValueType: string; ValueName: "EUROTRANS Logger"; ValueData: "{app}\EUROTRANS Logger.exe --minimized"; Tasks: AutoRunRegistry;
+
+[Files]
+Source: "@CMAKE_CURRENT_LIST_DIR@\LICENSE.md"; DestDir: "{app}"; DestName: "License.txt"
+Source: "@CMAKE_CURRENT_BINARY_DIR@\bin\EUROTRANS Logger.exe"; DestDir: "{app}"
+Source: "@CMAKE_CURRENT_BINARY_DIR@\bin\EUROTRANS Logger.dll"; DestDir: "{app}\win_x64"

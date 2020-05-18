@@ -1,0 +1,31 @@
+image:
+  - Visual Studio 2017
+platform: x64
+
+install:
+  - set PATH=%PATH%;C:\Python37-x64\Scripts
+  - pip.exe install conan
+  - conan user
+  - conan remote add public-conan https://api.bintray.com/conan/bincrafters/public-conan
+  - conan remote add theirix https://api.bintray.com/conan/bincrafters/theirix
+  - choco install -y innosetup
+  - set PATH=%PATH%;'C:\Program Files (x86)\Inno Setup 6';
+  - cd "%APPVEYOR_BUILD_FOLDER%"
+  - git submodule update --init --recursive
+
+build_script:
+  - mkdir build
+  - conan install . -if="build"
+  - cd build
+  - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
+  - cmake .. -G "Visual Studio 15 2017 Win64"
+  - cmake --build . --config Release
+
+after_build:
+  - cd "%APPVEYOR_BUILD_FOLDER%"
+  - iscc build\InnoSetup.iss
+
+artifacts:
+  - path: 'build\Output\ETS2JobLogger-v*.exe'
+  - path: 'build\bin\ets2-job-logger.exe'
+  - path: 'build\bin\ets2-job-logger.dll'
