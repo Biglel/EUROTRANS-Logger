@@ -4,7 +4,7 @@
 AppName=EUROTRANS Logger
 AppVersion={#APP_VERSION_FULL}
 LicenseFile=@CMAKE_CURRENT_LIST_DIR@\LICENSE.md
-OutputBaseFilename=EUROTRANS-Logger-v{#APP_VERSION_FULL}
+OutputBaseFilename=EUROTRANS Logger-v{#APP_VERSION_FULL}
 UsePreviousAppDir=yes
 PrivilegesRequired=none
 DefaultDirName={userappdata}\eurotranslogger
@@ -18,5 +18,5 @@ Root: HKCU; Subkey: "Software\Microsoft\Windows\CurrentVersion\Run"; ValueType: 
 
 [Files]
 Source: "@CMAKE_CURRENT_LIST_DIR@\LICENSE.md"; DestDir: "{app}"; DestName: "License.txt"
-Source: "@CMAKE_CURRENT_BINARY_DIR@\bin\EUROTRANS-Logger.exe"; DestDir: "{app}"
-Source: "@CMAKE_CURRENT_BINARY_DIR@\bin\EUROTRANS-Logger.dll"; DestDir: "{app}\win_x64"
+Source: "@CMAKE_CURRENT_BINARY_DIR@\bin\EUROTRANS Logger.exe"; DestDir: "{app}"
+Source: "@CMAKE_CURRENT_BINARY_DIR@\bin\EUROTRANS Logger.dll"; DestDir: "{app}\win_x64"
