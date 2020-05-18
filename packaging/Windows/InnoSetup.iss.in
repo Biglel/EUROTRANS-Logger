@@ -2,6 +2,8 @@
 
 [Setup]
 AppName=EUROTRANS-Logger
+AppPublisher=EUROTRANS
+AppPublisherURL=http://eurotrans.me/
 AppVersion={#APP_VERSION_FULL}
 LicenseFile=@CMAKE_CURRENT_LIST_DIR@\LICENSE.md
 OutputBaseFilename=EUROTRANS-Logger-v{#APP_VERSION_FULL}
