@@ -128,20 +128,20 @@ AboutDialog::AboutDialog( wxWindow* parent, wxWindowID id, const wxString& title
 	bSizer10->Add( m_staticText5, 0, wxALIGN_CENTER|wxALL, 5 );
 
 	wxHyperlinkCtrl* m_hyperlink2;
-	m_hyperlink2 = new wxHyperlinkCtrl( this, wxID_ANY, wxT("icon"), wxT("https://www.iconfinder.com/icons/4072100/box_delivery_package_shipping_transport_truck_icon"), wxDefaultPosition, wxDefaultSize, wxHL_DEFAULT_STYLE );
+	m_hyperlink2 = new wxHyperlinkCtrl( this, wxID_ANY, wxT("icon"), wxT("https://eurotrans.me"), wxDefaultPosition, wxDefaultSize, wxHL_DEFAULT_STYLE );
 	bSizer10->Add( m_hyperlink2, 0, wxALIGN_CENTER|wxBOTTOM|wxRIGHT|wxTOP, 5 );
 
 	wxStaticText* m_staticText6;
-	m_staticText6 = new wxStaticText( this, wxID_ANY, wxT("by"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText6 = new wxStaticText( this, wxID_ANY, wxT("par"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText6->Wrap( -1 );
 	bSizer10->Add( m_staticText6, 0, wxALIGN_CENTER|wxBOTTOM|wxRIGHT|wxTOP, 5 );
 
 	wxHyperlinkCtrl* m_hyperlink3;
-	m_hyperlink3 = new wxHyperlinkCtrl( this, wxID_ANY, wxT("icon lauk"), wxT("https://www.iconfinder.com/andhikairfani"), wxDefaultPosition, wxDefaultSize, wxHL_DEFAULT_STYLE );
+	m_hyperlink3 = new wxHyperlinkCtrl( this, wxID_ANY, wxT("icon lauk"), wxT("https://keryan.me"), wxDefaultPosition, wxDefaultSize, wxHL_DEFAULT_STYLE );
 	bSizer10->Add( m_hyperlink3, 0, wxALIGN_CENTER|wxBOTTOM|wxRIGHT|wxTOP, 5 );
 
 	wxStaticText* m_staticText7;
-	m_staticText7 = new wxStaticText( this, wxID_ANY, wxT("is licensed under"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText7 = new wxStaticText( this, wxID_ANY, wxT("est sous licence"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText7->Wrap( -1 );
 	bSizer10->Add( m_staticText7, 0, wxALIGN_CENTER|wxBOTTOM|wxRIGHT|wxTOP, 5 );
 
